@@ -13,7 +13,9 @@ categories:
 
 ---
 
-AWS App Mesh is the latest addition to AWS container services. AWS App Mesh is a service mesh to help manage and control containerized microservices. 
+AWS App Mesh is the latest addition to AWS product potfolio. To quote AWS
+"AWS App Mesh makes it easy to monitor and control microservices running on AWS." AWS App Mesh is in public preview as of this post and we will take a brief look at it. 
+
 
 **Why do you need a service mesh**
 
