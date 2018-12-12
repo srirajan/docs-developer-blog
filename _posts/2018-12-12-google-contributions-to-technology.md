@@ -12,15 +12,17 @@ categories:
 
 ---
 
-This post started as a back-on-forth discussion in a private channel where I suggested that we are slowly and surely implementing infrastructure & software, in the "Google Way". This led to a bit more research to actually write down the list of Google's contributions and influences.  Here are some guidelines followed to write this down.
+This post started as a back-on-forth discussion in a private channel where I suggested that we are slowly and surely implementing infrastructure & software, in the "Google" way. This led to a bit more research to actually write down the list of Google's contributions and influences.  Before we go here, here are some guidelines followed to write this down.
 
- - Direct contributions - The definition of "direct", in this context, is software that is available and used in the public domain.
+ - Direct contributions - The definition of "direct", in this context, is software that is now available and used in the public domain.
 
  - Influences - The definition of "influences", in this context, is ideas that have led to creation of software that is available and used in the public domain. 
 
  - The software must exist in the public domain under an open source license that has been approved by [OSI](https://opensource.org/).
 
  - Projects originating from events like Google's Summer of Code have been excluded as they are hard to measure and strictly speaking is not software that originated from within Google. 
+ 
+ - In the same vein, other community support or contributions by Google developers to Open Source project were not assessed. 
 
 
 **Direct Contributions**
@@ -44,7 +46,7 @@ This post started as a back-on-forth discussion in a private channel where I sug
  - MapReduce - Google invented MapReduce to manage search on a large-scale. 
 Google published a [white paper](http://static.googleusercontent.com/media/research.google.com/en/us/archive/mapreduce-osdi04.pdf) describing the MapReduce programming model laid the foundation for Apache Hadoop ([ref] (https://books.google.co.uk/books?id=axruBQAAQBAJ&pg=PA300&redir_esc=y#v=onepage&q&f=false)).
 
-- Hbase - Similar to Mapreduce, Google's Bigtable [whitepaper](http://static.googleusercontent.com/media/research.google.com/en/us/archive/bigtable-osdi06.pdf) laid the foundation for Apache Hbase.
+- Hbase - Similar to Mapreduce, based on Google's Bigtable [whitepaper](http://static.googleusercontent.com/media/research.google.com/en/us/archive/bigtable-osdi06.pdf) laid the foundation for Apache Hbase.
 
 - Chubby - Chubby is a distributed lock service intended for use within Google’s distributed systems. Apache ZooKeeper is the open source implementation based on Google’s Chubby [whitepaper](http://static.googleusercontent.com/media/research.google.com/en/us/archive/chubby-osdi06.pdf). Worth mentioning that ZooKeeper has evolved into other areas like metadata storage.
 
