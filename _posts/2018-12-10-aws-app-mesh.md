@@ -2,7 +2,7 @@
 
 layout: post
 title: "AWS App Mesh - A first look"
-date: 2018-12-06 00:00
+date: 2018-12-12 00:00
 comments: true
 author: Sri Rajan
 published: true
@@ -27,7 +27,7 @@ With increased adoption of microservices, some challenges have surfaced for whic
 
 At the core, AWS App Mesh is a solution that uses [Envoy proxy](https://www.envoyproxy.io/). Envoy is a recently graduated Cloud Native Computing Foundation [(CNCF)](https://www.cncf.io/) project that implements a high performance and simple service proxy. It was created using C++ by [Lyft](https://eng.lyft.com/announcing-envoy-c-l7-proxy-and-communication-bus-92520b6c8191) in 2016 and then donated to the CNCF foundation. It operates at layer 3 but has the intelligence to understand HTTP, HTTPS, GRPC, and other higher-level protocols. It was written to do one thing, proxy, and do that well. To quote from the Lyft blog post, it was formed with the belief that "The network should be transparent to applications. When network and application problems do occur, it should be easy to determine the source of the problem." 
 
-To use Envoy at scale (100s or 1000s of connections), you need something to manage Envoy, and that is the role App Mesh plays. In a world where you have 100s of microservices and several changes happening every hour, this Mesh layer becomes the control plane for the proxies and has the intelligence to start and stop them as your application changes. App Mesh can be used with any compute service in AWS (ECS, EKS, EC2). In theory, any service that can talk to the Envoy management layer can be integrated, but this depends on the integration.
+To use Envoy at scale (hundreds or thousands of connections), you need something to manage Envoy, and that is the role App Mesh plays. In a world where you have hundreds of microservices and several changes happening every hour, this Mesh layer becomes the control plane for the proxies and has the intelligence to start and stop them as your application changes. App Mesh can be used with any compute service in AWS (ECS, EKS, EC2). In theory, any service that can talk to the Envoy management layer can be integrated, but this depends on the integration.
 
 If you are familiar with this space, you are probably asking is this the same as [Istio](https://istio.io/)? For those who haven't heard about Istio, service meshes are still very new in terms of technology and a leader is yet to emerge. [Istio](https://istio.io/) has been a popular service mesh option in this short time period. In terms of similarities both use Envoy and provide support for common container platforms for Kubernetes. For large parts, both are trying to solve for the same problem. 
 
